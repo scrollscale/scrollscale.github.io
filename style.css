@@ -5,11 +5,12 @@
 }
 
 body {
-  background: #f6f2ed;
+  background: linear-gradient(to bottom right, #f7f3ee, #f3efe9);
   font-family: Arial, sans-serif;
   color: #111;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* HERO */
@@ -101,4 +102,28 @@ body {
     height: 180px;
   }
 
+}
+
+.blur1,
+.blur2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.blur1 {
+  width: 300px;
+  height: 300px;
+  background: #efe7dc;
+  top: -100px;
+  left: -100px;
+}
+
+.blur2 {
+  width: 300px;
+  height: 300px;
+  background: #e8dfd4;
+  bottom: -100px;
+  right: -100px;
 }
