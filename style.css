@@ -5,7 +5,15 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #f7f3ee, #f3efe9);
+  background:
+    linear-gradient(rgba(246,242,237,0.72), rgba(246,242,237,0.72)),
+    url('background.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   font-family: Arial, sans-serif;
   color: #111;
   min-height: 100vh;
