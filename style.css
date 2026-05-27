@@ -151,3 +151,13 @@ body {
 .language-box:nth-child(2) {
   animation-delay: 1.5s;
 }
+
+.flag-image {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+}
