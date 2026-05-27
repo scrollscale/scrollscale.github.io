@@ -5,9 +5,7 @@
 }
 
 body {
-  background:
-    linear-gradient(rgba(246,242,237,0.72), rgba(246,242,237,0.72)),
-    url('background.png');
+  background: url('background.png');
 
   background-size: cover;
   background-position: center;
