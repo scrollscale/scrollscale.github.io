@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Scrollscale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Scale</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: black;
-  color: white;
-}
-
-/* popup */
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-button {
-  padding: 15px 25px;
-  margin: 10px;
-  font-size: 18px;
-  cursor: pointer;
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="popup">
-  <h1>Choose language</h1>
-  <button onclick="location.href='en.html'">English 🇬🇧</button>
-  <button onclick="location.href='fi.html'">Suomi 🇫🇮</button>
-</div>
+<section class="hero">
+
+  <h1 class="logo">Scroll Scale</h1>
+
+  <p class="subtitle">
+    UGC content for your brand
+  </p>
+
+  <div class="language-container">
+
+    <a href="en.html" class="language-box">
+      <div class="flag">🇬🇧</div>
+      <div class="language-text">ENGLISH</div>
+    </a>
+
+    <a href="fi.html" class="language-box">
+      <div class="flag">🇫🇮</div>
+      <div class="language-text">FINNISH</div>
+    </a>
+
+  </div>
+
+</section>
 
 </body>
 </html>
