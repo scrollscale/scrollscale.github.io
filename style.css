@@ -174,3 +174,6 @@ body {
   }
 
 }
+img[src="fi.png"] {
+  transform: scale(1.12);
+}
