@@ -58,6 +58,18 @@ body {
   letter-spacing: 1px;
 }
 
+/* LANGUAGE LABEL */
+
+.language-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  opacity: 0.5;
+
+  margin-bottom: 12px;
+}
+
 /* LANGUAGE CONTAINER */
 
 .language-container {
@@ -122,6 +134,12 @@ body {
   display: block;
 }
 
+/* FINLAND FLAG OPTICAL SIZE FIX */
+
+img[src="fi.png"] {
+  transform: scale(1.12);
+}
+
 /* FLOAT ANIMATION */
 
 @keyframes float {
@@ -158,6 +176,11 @@ body {
     margin-bottom: 30px;
   }
 
+  .language-label {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
   .language-container {
     flex-direction: row;
     gap: 18px;
@@ -173,7 +196,4 @@ body {
     height: 42px;
   }
 
-}
-img[src="fi.png"] {
-  transform: scale(1.12);
 }
