@@ -34,15 +34,17 @@ body {
 .hero-text {
   flex: 1;
   max-width: 500px;
+
+  padding-top: 60px;
 }
 
 .small-label {
-  font-size: 12px;
-  letter-spacing: 3px;
+  font-size: 14px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   opacity: 0.6;
 
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .hero-text h1 {
@@ -58,6 +60,8 @@ body {
 .hero-description {
   font-size: 20px;
   opacity: 0.75;
+
+  margin-bottom: 20px;
 }
 
 /* PHONE */
