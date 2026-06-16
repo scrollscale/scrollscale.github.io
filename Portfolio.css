@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 24px 40px;
+  padding: 16px 40px;
 
   background: rgba(248,245,241,0.92);
   backdrop-filter: blur(12px);
@@ -35,7 +35,7 @@ body {
   color: #111;
 
   font-family: Georgia, serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -72,7 +72,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 
-  padding-top: 60px;
+  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 120px;
@@ -81,8 +81,6 @@ body {
 .hero-text {
   flex: 1;
   max-width: 500px;
-
-  padding-top: 60px;
 }
 
 .small-label {
@@ -114,8 +112,8 @@ body {
 /* PHONE */
 
 .phone-placeholder {
-  width: 280px;
-  height: 520px;
+  width: 260px;
+  height: 500px;
 
   border-radius: 40px;
 
