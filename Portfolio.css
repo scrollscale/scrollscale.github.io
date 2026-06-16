@@ -114,8 +114,8 @@ body {
 /* PHONE */
 
 .phone-placeholder {
-  width: 280px;
-  height: 560px;
+  width: 270px;
+  height: 520px;
 
   border-radius: 42px;
 
@@ -290,8 +290,8 @@ section h2 {
   }
 
   .phone-placeholder {
-    width: 280px;
-    height: 560px;
+    width: 270px;
+    height: 520px;
 
     margin-top: 0;
   }
