@@ -82,7 +82,7 @@ body {
   flex: 1;
   max-width: 500px;
 
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .small-label {
@@ -114,8 +114,8 @@ body {
 /* PHONE */
 
 .phone-placeholder {
-  width: 320px;
-  height: 640px;
+  width: 280px;
+  height: 560px;
 
   border-radius: 42px;
 
