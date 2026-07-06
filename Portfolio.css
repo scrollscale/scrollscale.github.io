@@ -264,6 +264,12 @@ section h2 {
   text-align: center;
 }
 
+.contact h2 {
+
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
 .contact p {
 
   font-size: 19px;
