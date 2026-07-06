@@ -207,8 +207,8 @@ section h2 {
 
 .about-image {
 
-  width: 320px;
-  height: 400px;
+  width: 310px;
+  height: 390px;
 
   background: white;
 
@@ -248,7 +248,7 @@ section h2 {
 
   background: white;
 
-  padding: 22px;
+  padding: 18px;
 
   border-radius: 18px;
 
@@ -266,7 +266,7 @@ section h2 {
 
 .contact p {
 
-  font-size: 22px;
+  font-size: 19px;
 }
 
 /* MOBILE */
