@@ -67,7 +67,7 @@ body {
 
   gap: 70px;
 
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
 
   padding: 20px 40px 40px;
@@ -76,7 +76,7 @@ body {
 .hero-text {
 
   flex: 1;
-  max-width: 480px;
+  max-width: 500px;
 
   padding-top: 60px;
 }
