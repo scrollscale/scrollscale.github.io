@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="Portfolio.css">
 </head>
 
+
+  
 <body>
 
   <div id="top"></div>
@@ -250,6 +252,29 @@
     </p>
 
   </section>
+ <script>
+    document.querySelectorAll(".carousel-container").forEach(container => {
+
+      const carousel = container.querySelector(".video-carousel");
+      const next = container.querySelector(".next");
+      const prev = container.querySelector(".prev");
+
+      next.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: 568,
+          behavior: "smooth"
+        });
+      });
+
+      prev.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: -568,
+          behavior: "smooth"
+        });
+      });
+
+    });
+  </script>
 
 </body>
 
