@@ -252,29 +252,31 @@
     </p>
 
   </section>
- <script>
-    document.querySelectorAll(".carousel-container").forEach(container => {
 
-      const carousel = container.querySelector(".video-carousel");
-      const next = container.querySelector(".next");
-      const prev = container.querySelector(".prev");
+<script>
+document.querySelectorAll(".carousel-container").forEach(container => {
 
-      next.addEventListener("click", () => {
-        carousel.scrollBy({
-          left: 568,
-          behavior: "smooth"
-        });
-      });
+  const carousel = container.querySelector(".video-carousel");
+  const next = container.querySelector(".next");
+  const prev = container.querySelector(".prev");
 
-      prev.addEventListener("click", () => {
-        carousel.scrollBy({
-          left: -568,
-          behavior: "smooth"
-        });
-      });
-
+  next.addEventListener("click", () => {
+    carousel.scrollBy({
+      left: carousel.clientWidth,
+      behavior: "smooth"
     });
-  </script>
+  });
+
+  prev.addEventListener("click", () => {
+    carousel.scrollBy({
+      left: -carousel.clientWidth,
+      behavior: "smooth"
+    });
+  });
+
+});
+</script>
+
 
 </body>
 
