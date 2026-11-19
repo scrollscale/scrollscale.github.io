@@ -202,23 +202,21 @@ section h2 {
 /* VIDEO CARDS */
 
 .video-card {
+  flex: 0 0 220px;
 
-  width: 200px;
-  height: 356px;
-
-  flex-shrink: 0;
-
-  margin: 0 auto;
+  width: 220px;
+  height: 391px;
 
   background: white;
-
-  border-radius: 28px;
+  border-radius: 32px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  scroll-snap-align: start;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,.07);
 
   transition: transform .3s ease,
               box-shadow .3s ease;
