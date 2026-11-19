@@ -202,10 +202,10 @@ section h2 {
 /* VIDEO CARDS */
 
 .video-card {
-  flex: 0 0 260px;
+  flex: 0 0 220px;
 
-  width: 260px;
-  height: 460px;
+  width: 220px;
+  height: 391px;
 
   background: white;
   border-radius: 32px;
@@ -293,10 +293,10 @@ section h2 {
   }
 
   .video-card {
-    flex: 0 0 220px;
-    width: 220px;
-    height: 390px;
-  }
+  flex: 0 0 190px;
+  width: 190px;
+  height: 338px;
+}
 
   .carousel-arrow {
     display: none;
