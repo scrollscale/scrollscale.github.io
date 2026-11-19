@@ -511,3 +511,128 @@ text-align:center;
 
   transform: translateY(-2px);
 }
+
+/* BEAUTIFUL NICHE CARDS */
+
+.niches {
+  padding: 60px 30px 80px;
+}
+
+.niches h2 {
+  margin-bottom: 35px;
+}
+
+/* GRID */
+
+.niche-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  max-width: 680px;
+
+  margin: 0 auto;
+}
+
+/* CARDS */
+
+.niche-card {
+
+  min-height: 115px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 20px 15px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+
+  border-radius: 22px;
+
+  color: #2b241f;
+
+  box-shadow:
+    0 8px 20px rgba(90, 65, 45, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  transition: all 0.3s ease;
+}
+
+/* ICONS */
+
+.niche-icon {
+  width: 25px;
+  height: 25px;
+
+  color: #514438;
+}
+
+/* TEXT */
+
+.niche-card span {
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  text-align: center;
+
+  line-height: 1.3;
+}
+
+/* HOVER */
+
+.niche-card:hover {
+
+  transform: translateY(-4px);
+
+  background: rgba(255, 255, 255, 0.32);
+
+  box-shadow:
+    0 12px 25px rgba(90, 65, 45, 0.12);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .niche-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    max-width: 420px;
+  }
+
+  .niche-card {
+    min-height: 105px;
+
+    padding: 16px 10px;
+
+    border-radius: 18px;
+  }
+
+  .niche-card span {
+    font-size: 14px;
+  }
+
+  .niche-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .niches {
+    padding: 45px 20px 60px;
+  }
+
+}
