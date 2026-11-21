@@ -178,8 +178,9 @@ section h2 {
    NICHE CARDS
 ========================================= */
 /* NICHE SECTION */
+
 .niches {
-  padding: 25px 20px 95px;
+  padding: 60px 20px 95px;
   text-align: center;
 }
 
@@ -541,12 +542,12 @@ html {
 @media (max-width: 600px) {
 
   .niches {
-    padding: 20px 15px 80px;
+    padding: 45px 15px 80px;
   }
 
   .niches h2 {
     font-size: 27px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
 
