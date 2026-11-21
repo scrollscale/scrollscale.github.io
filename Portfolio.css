@@ -427,16 +427,16 @@ section h2 {
 
 .about {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: row-reverse;
 
-  gap: 35px;
+  gap: 50px;
   align-items: center;
 
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .about-image {
@@ -456,7 +456,7 @@ section h2 {
 .about-text {
   flex: 1;
   min-width: 0;
-  max-width: 655px;
+  max-width: 550px;
 }
 
 .about-text h2 {
