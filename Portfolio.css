@@ -426,19 +426,22 @@ section h2 {
 ========================================= */
 
 .about {
-  max-width: 1180px;
+  max-width: 1350px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: row-reverse;
 
-  gap: 60px;
+  gap: 50px;
   align-items: center;
+
+  padding: 60px 50px 60px;
 }
 
 .about-image {
   width: 310px;
   height: 390px;
+  flex-shrink: 0;
 
   background: white;
 
@@ -451,14 +454,20 @@ section h2 {
 
 .about-text {
   flex: 1;
-  max-width: 500px;
+  max-width: 750px;
 }
 
 .about-text h2 {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 42px;
 }
 
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 750px;
+}
 
 /* =========================================
    CONTACT
@@ -679,16 +688,14 @@ html {
   }
 
 
-  /* ABOUT */
+ /* ABOUT */
 
-  .about {
-    flex-direction: column;
-  }
+.about {
+  flex-direction: column;
+}
 
-  .about-text h2 {
-    text-align: center;
-  }
-
+.about-text h2 {
+  text-align: center;
 }
 
 
