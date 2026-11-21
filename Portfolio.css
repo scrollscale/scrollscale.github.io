@@ -179,8 +179,9 @@ section h2 {
 ========================================= */
 /* NICHE SECTION */
 
+
 .niches {
-  padding: 60px 20px 95px;
+  padding: 80px 20px 30px;
   text-align: center;
 }
 
@@ -284,7 +285,7 @@ section h2 {
 ========================================= */
 
 .featured-work {
-  padding: 120px 30px 60px;
+  padding: 60px 30px 60px;
 }
 
 
@@ -542,7 +543,7 @@ html {
 @media (max-width: 600px) {
 
   .niches {
-    padding: 45px 15px 80px;
+    padding: 40px 15px 25px;
   }
 
   .niches h2 {
@@ -584,7 +585,7 @@ html {
 @media (max-width: 900px) {
 
   .featured-work {
-    padding: 55px 20px 45px;
+    padding: 35px 20px 45px;
   }
 
   .featured-work > h2 {
