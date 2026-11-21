@@ -420,13 +420,13 @@ section h2 {
   right: -21px;
 }
 
-
 /* =========================================
    ABOUT
 ========================================= */
 
 .about {
-  max-width: 1450px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 
   display: flex;
@@ -435,8 +435,11 @@ section h2 {
   gap: 50px;
   align-items: center;
 
-  padding: 60px 50px 60px;
+  /* Vasemman tekstireunan ja kuvan oikean reunan kohdistus */
+  padding: 60px 48px 60px 15px;
 }
+
+/* IMAGE */
 
 .about-image {
   width: 310px;
@@ -444,7 +447,6 @@ section h2 {
   flex-shrink: 0;
 
   background: white;
-
   border-radius: 30px;
 
   display: flex;
@@ -452,9 +454,12 @@ section h2 {
   align-items: center;
 }
 
+/* TEXT */
+
 .about-text {
   flex: 1;
-  max-width: 750px;
+  min-width: 0;
+  max-width: none;
 }
 
 .about-text h2 {
@@ -466,9 +471,8 @@ section h2 {
 .about-text p {
   font-size: 17px;
   line-height: 1.8;
-  max-width: 750px;
+  max-width: 100%;
 }
-
 /* =========================================
    CONTACT
 ========================================= */
