@@ -284,7 +284,7 @@ section h2 {
 ========================================= */
 
 .featured-work {
-  padding: 90px 30px 60px;
+  padding: 120px 30px 60px;
 }
 
 
@@ -479,6 +479,7 @@ section h2 {
 
 .contact {
   text-align: center;
+  margin-top: 60px;
 }
 
 .contact h2 {
