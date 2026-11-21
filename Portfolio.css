@@ -1,8 +1,17 @@
+/* =========================================
+   RESET
+========================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* =========================================
+   BODY
+========================================= */
 
 body {
   background:
@@ -19,7 +28,10 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+
+/* =========================================
+   NAVBAR
+========================================= */
 
 .navbar {
   position: sticky;
@@ -58,6 +70,7 @@ body {
 
   font-size: 15px;
   opacity: .75;
+
   transition: .3s ease;
 }
 
@@ -65,7 +78,10 @@ body {
   opacity: 1;
 }
 
-/* HERO */
+
+/* =========================================
+   HERO
+========================================= */
 
 .portfolio-hero {
   display: flex;
@@ -114,7 +130,10 @@ body {
   margin-bottom: 18px;
 }
 
-/* PHONE */
+
+/* =========================================
+   PHONE PLACEHOLDER
+========================================= */
 
 .phone-placeholder {
   width: 280px;
@@ -135,7 +154,10 @@ body {
   box-shadow: 0 20px 50px rgba(0,0,0,.08);
 }
 
-/* GENERAL */
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
 
 section {
   padding: 70px 30px;
@@ -151,32 +173,155 @@ section h2 {
   margin-bottom: 50px;
 }
 
-/* FEATURED WORK CAROUSELS */
+
+/* =========================================
+   NICHE CARDS
+========================================= */
+
+.niches {
+  padding: 25px 20px 70px;
+  text-align: center;
+}
+
+.niches h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 25px;
+}
+
+
+/* GRID */
+
+.niche-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 680px;
+  margin: 0 auto;
+
+  gap: 12px;
+}
+
+
+/* CARDS */
+
+.niche-card {
+  min-height: 85px;
+  padding: 12px 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: rgba(245, 231, 219, 0.48);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 15px rgba(80, 55, 35, 0.05);
+
+  color: #171311;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ICONS */
+
+.niche-icon {
+  width: 34px;
+  height: 34px;
+
+  fill: none;
+  stroke: #493728;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* TEXT */
+
+.niche-card span {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+
+  text-decoration: none;
+}
+
+
+/* HOVER */
+
+.niche-card:hover {
+  transform: translateY(-3px);
+
+  background: rgba(248, 235, 224, 0.68);
+
+  box-shadow:
+    0 10px 20px rgba(80, 55, 35, 0.1);
+}
+
+
+/* =========================================
+   PORTFOLIO
+========================================= */
 
 .featured-work {
-  padding: 60px 30px;
+  padding: 75px 30px 60px;
 }
 
+
+/* PORTFOLIO MAIN TITLE */
+
 .featured-work > h2 {
-  margin-bottom: 55px;
+  font-size: 36px;
+
+  margin-bottom: 75px;
 }
+
+
+/* VIDEO CATEGORIES */
 
 .video-category {
   max-width: 1000px;
   margin: 0 auto 65px;
+
+  scroll-margin-top: 180px;
 }
 
 .video-category h3 {
   font-family: Georgia, serif;
   font-size: 27px;
   font-weight: 400;
+
   margin-bottom: 22px;
 }
 
-/* CAROUSEL */
+
+/* =========================================
+   CAROUSEL
+========================================= */
 
 .carousel-container {
   position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -188,6 +333,7 @@ section h2 {
   width: 100%;
 
   overflow-x: auto;
+
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 
@@ -198,7 +344,10 @@ section h2 {
   display: none;
 }
 
-/* VIDEO CARDS */
+
+/* =========================================
+   VIDEO CARDS
+========================================= */
 
 .video-card {
   flex: 0 0 220px;
@@ -217,16 +366,21 @@ section h2 {
 
   box-shadow: 0 15px 40px rgba(0,0,0,.07);
 
-  transition: transform .3s ease,
-              box-shadow .3s ease;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
 }
 
 .video-card:hover {
   transform: translateY(-5px);
+
   box-shadow: 0 20px 45px rgba(0,0,0,.11);
 }
 
-/* CAROUSEL ARROWS */
+
+/* =========================================
+   CAROUSEL ARROWS
+========================================= */
 
 .carousel-arrow {
   position: absolute;
@@ -267,43 +421,10 @@ section h2 {
   right: -21px;
 }
 
-/* FEATURED WORK MOBILE */
 
-@media (max-width: 900px) {
-
-  .featured-work {
-    padding: 45px 20px;
-  }
-
-  .featured-work > h2 {
-    margin-bottom: 40px;
-  }
-
-  .video-category {
-    margin-bottom: 45px;
-  }
-
-  .video-category h3 {
-    font-size: 23px;
-  }
-
-  .video-carousel {
-    gap: 16px;
-  }
-
-  .video-card {
-    flex: 0 0 190px;
-    width: 190px;
-    height: 338px;
-  }
-
-  .carousel-arrow {
-    display: none;
-  }
-
-}
-
-/* ABOUT */
+/* =========================================
+   ABOUT
+========================================= */
 
 .about {
   max-width: 1180px;
@@ -336,7 +457,10 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* CONTACT */
+
+/* =========================================
+   CONTACT
+========================================= */
 
 .contact {
   text-align: center;
@@ -351,7 +475,10 @@ section h2 {
   font-size: 19px;
 }
 
-/* HERO BUTTON */
+
+/* =========================================
+   HERO BUTTON
+========================================= */
 
 .hero-button {
   display: inline-block;
@@ -382,105 +509,24 @@ section h2 {
   transform: translateY(-2px);
 }
 
+
 /* =========================================
-   NICHE CARDS
+   SMOOTH SCROLLING
 ========================================= */
 
-.niches {
-  padding: 25px 20px 45px;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.niches h2 {
-  font-family: Georgia, serif;
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 25px;
-}
 
-/* GRID */
-
-.niche-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  max-width: 680px;
-  margin: 0 auto;
-
-  gap: 12px;
-}
-
-/* CARDS */
-
-.niche-card {
-  min-height: 85px;
-  padding: 12px 8px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 8px;
-
-  background: rgba(245, 231, 219, 0.48);
-
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  border-radius: 18px;
-
-  box-shadow:
-    0 5px 15px rgba(80, 55, 35, 0.05);
-
-  color: #171311;
-
-  transition: all 0.3s ease;
-}
-
-/* ICONS */
-
-.niche-icon {
-  width: 34px;
-  height: 34px;
-
-  fill: none;
-  stroke: #493728;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* TEXT */
-
-.niche-card span {
-  font-family: Georgia, serif;
-  font-size: 15px;
-  font-weight: 400;
-
-  line-height: 1.2;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* HOVER */
-
-.niche-card:hover {
-  transform: translateY(-3px);
-
-  background: rgba(248, 235, 224, 0.68);
-
-  box-shadow:
-    0 10px 20px rgba(80, 55, 35, 0.1);
-}
-
-/* MOBILE NICHE CARDS */
+/* =========================================
+   MOBILE - NICHE CARDS
+========================================= */
 
 @media (max-width: 600px) {
 
   .niches {
-    padding: 20px 15px 40px;
+    padding: 20px 15px 60px;
   }
 
   .niches h2 {
@@ -491,12 +537,14 @@ section h2 {
   .niche-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+
     max-width: 400px;
   }
 
   .niche-card {
     min-height: 80px;
     padding: 10px 5px;
+
     gap: 7px;
   }
 
@@ -511,11 +559,57 @@ section h2 {
 
 }
 
+
+/* =========================================
+   MOBILE - PORTFOLIO
+========================================= */
+
+@media (max-width: 900px) {
+
+  .featured-work {
+    padding: 55px 20px 45px;
+  }
+
+  .featured-work > h2 {
+    font-size: 32px;
+    margin-bottom: 65px;
+  }
+
+  .video-category {
+    margin-bottom: 45px;
+
+    scroll-margin-top: 150px;
+  }
+
+  .video-category h3 {
+    font-size: 23px;
+  }
+
+  .video-carousel {
+    gap: 16px;
+  }
+
+  .video-card {
+    flex: 0 0 190px;
+
+    width: 190px;
+    height: 338px;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+}
+
+
 /* =========================================
    GENERAL MOBILE STYLES
 ========================================= */
 
 @media (max-width: 900px) {
+
+  /* NAVBAR */
 
   .navbar {
     padding: 16px 18px;
@@ -532,6 +626,9 @@ section h2 {
   .nav-links a {
     font-size: 12px;
   }
+
+
+  /* HERO */
 
   .portfolio-hero {
     flex-direction: column;
@@ -563,6 +660,9 @@ section h2 {
     font-size: 18px;
   }
 
+
+  /* PHONE */
+
   .phone-placeholder {
     width: 280px;
     height: 560px;
@@ -576,6 +676,9 @@ section h2 {
     align-items: center;
   }
 
+
+  /* ABOUT */
+
   .about {
     flex-direction: column;
   }
@@ -586,15 +689,43 @@ section h2 {
 
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-.video-category {
-  scroll-margin-top: 100px;
-}
+/* =========================================
+   SMALL MOBILE
+========================================= */
 
-.niche-card {
-  text-decoration: none;
-  cursor: pointer;
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 12px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 7px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 46px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .featured-work > h2 {
+    font-size: 30px;
+  }
+
+  .video-category h3 {
+    font-size: 21px;
+  }
+
 }
