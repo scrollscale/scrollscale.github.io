@@ -480,6 +480,7 @@ section h2 {
 .contact {
   text-align: center;
   margin-top: 60px;
+  padding-bottom: 120px;
 }
 
 .contact h2 {
@@ -490,7 +491,6 @@ section h2 {
 .contact p {
   font-size: 19px;
 }
-
 
 /* =========================================
    HERO BUTTON
