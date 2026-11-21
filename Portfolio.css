@@ -449,7 +449,7 @@ section h2 {
 
 .about-text {
   flex: 1;
-  max-width: 650px;
+  max-width: 500px;
 }
 
 .about-text h2 {
